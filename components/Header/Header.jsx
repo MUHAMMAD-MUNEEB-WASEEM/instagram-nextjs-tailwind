@@ -59,7 +59,7 @@ function Header() {
                     <UserGroupIcon className="navBtn"/>
                     <HeartIcon className="navBtn"/>
 
-                    <img src="https://links.papareact.com/3ke" alt="profile pic"
+                    <img src="https://whatsapp-mern-fullstack.web.app/static/media/my%20image3jpg.f2592b34.jpg" alt="profile pic"
                         className="h-10 rounded-full cursor-pointer"
                     />
                 </div>

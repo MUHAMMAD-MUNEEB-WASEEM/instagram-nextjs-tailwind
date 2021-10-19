@@ -1,5 +1,7 @@
+import MiniProfile from "./FeedComponents/MiniProfile/MiniProfile"
 import Posts from "./FeedComponents/Posts/Posts"
 import Stories from "./FeedComponents/Stories/Stories"
+import Suggestions from "./FeedComponents/Suggestions/Suggestions"
 
 function Feed() {
     return (
@@ -11,22 +13,26 @@ function Feed() {
             <section className="col-span-2">
                 {/*Stories*/}
                 <Stories/>
-                <Posts/>
+                
 
                 {/*Post*/}
-
+                <Posts/>
 
 
             </section>
                 
 
             {/*Section*/}
-            <section>
-                {/*Mini Profile*/}
-                {/*Suggestions*/}
+            <section className="hidden xl:inline-grid md:col-span-1">
+                
+                <div className="fixed top-20">
+                    {/*Mini Profile*/}
+                    <MiniProfile/>
+                    
+                    {/*Suggestions*/}
+                    <Suggestions/>
 
-
-
+                </div>
 
             </section>
                 
