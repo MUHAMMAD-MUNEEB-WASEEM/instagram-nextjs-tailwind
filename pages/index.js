@@ -1,17 +1,17 @@
 import Head from 'next/head'
-import Header from '../components/Header'
+import Feed from '../components/Feed/Feed'
+import Header from '../components/Header/Header'
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-auto scrollbar-hide">
       <Head>
         <title>Instagram</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header/>
-
-      {/*Feeder*/}
+      <Feed/>
 
       {/*Modal*/}
 
