@@ -1,4 +1,5 @@
-import Stories from "./FeedComponents/Stories"
+import Posts from "./FeedComponents/Posts/Posts"
+import Stories from "./FeedComponents/Stories/Stories"
 
 function Feed() {
     return (
@@ -10,7 +11,7 @@ function Feed() {
             <section className="col-span-2">
                 {/*Stories*/}
                 <Stories/>
-
+                <Posts/>
 
                 {/*Post*/}
 
