@@ -9,7 +9,7 @@ const posts = [
         caption: "This is lit!"
     },
     {
-        id: '123',
+        id: '456',
         username: "leadastairianA",
         userImg: "https://whatsapp-mern-fullstack.web.app/static/media/my%20image3jpg.f2592b34.jpg",
         img: 'https://links.papareact.com/3ke',
