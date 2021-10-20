@@ -10,4 +10,15 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
+
+  //code to get by default login page from auth
+  // theme:{
+  //   logo: "http://links.papareact.com/sq0",
+  //   brandColor: "#F13287",
+  //   colorScheme: "auto"
+  // }
+
+  pages:{
+    signIn: '/auth/signin',
+  }
 })
