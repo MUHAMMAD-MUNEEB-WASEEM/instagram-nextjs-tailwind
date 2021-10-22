@@ -1,11 +1,13 @@
+import { useSession } from "next-auth/react"
 import MiniProfile from "./FeedComponents/MiniProfile/MiniProfile"
 import Posts from "./FeedComponents/Posts/Posts"
 import Stories from "./FeedComponents/Stories/Stories"
 import Suggestions from "./FeedComponents/Suggestions/Suggestions"
 
 function Feed() {
+    const { data:session } = useSession()
     return (
-        <main className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl xl:grid-cols-3 xl:max-w-6xl mx-auto">
+        <main className={`grid grid-cols-1 md:grid-cols-2 md:max-w-3xl xl:grid-cols-3 xl:max-w-6xl mx-auto ${!session && "!grid-cols-1 !max-w-3xl" }`}>
 
 
             {/*Section*/}
@@ -23,18 +25,22 @@ function Feed() {
                 
 
             {/*Section*/}
-            <section className="hidden xl:inline-grid md:col-span-1">
+
+            {session && (
+                <section className="hidden xl:inline-grid md:col-span-1">
                 
-                <div className="fixed top-20">
-                    {/*Mini Profile*/}
-                    <MiniProfile/>
-                    
-                    {/*Suggestions*/}
-                    <Suggestions/>
-
-                </div>
-
-            </section>
+                 <div className="fixed top-20">
+                     {/*Mini Profile*/}
+                     <MiniProfile/>
+                     
+                     {/*Suggestions*/}
+                     <Suggestions/>
+ 
+                 </div>
+ 
+                </section>
+            )}
+           
                 
             
         </main>
