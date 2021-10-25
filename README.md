@@ -1,6 +1,24 @@
 # Instagram
 
-This app is inspired from instagram. It is made using next.js, react.js, recoil, tailwind css and firebase
+This app is inspired from instagram. It is made using next.js, react.js, recoil, tailwind css and firebase. Nextjs is used for SSR. Recoil is used as a global store to populate data within the app. Tailwind Css is used for styling and especially for responsiveness. Firebase firestore and storage is being used as a database. NextAuth is also used for sigin and signout. Moreover, vercel is used for deployment
+
+## App Link
+
+https://instagram-nextjs-tailwind.vercel.app/
+
+## Dependencies Used
+
+* yarn add faker (to get fake data for stories)
+* yarn add @tailwindcss/forms
+* yarn add @heroicons/react
+* yarn add tailwind-scrollbar
+* yarn add tailwind-scrollbar-hide
+* yarn add next-auth@beta
+* yarn add firebase 
+* yarn add recoil              
+* yarn add @headlessui/react
+* yarn add react-moment                
+
 
 # Next.js + Tailwind CSS Example
 
